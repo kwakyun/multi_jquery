@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        console.log("hello");
+
+        $(function(){
+            console.log("ready....");
+            
+            console.log($("#img01").attr("src"));//getter
+            console.log($("#img01").attr("alt"));//getter
+            
+            $("#img02").attr("src","images/0002.png");//setter
+            $("#img03").attr("src","images/0003.png");//setter
+            $("#img04").attr("src","images/0004.png");//setter
+        });
+        
+    </script>
+</head>
+<body>
+    <h1 id="id">id</h1>
+    <img id="img01" src="images/0001.png" alt="공짜방이미지">
+    <img id="img02" alt="공짜방이미지">
+    <img id="img03" alt="공짜방이미지">
+    <img id="img04" alt="공짜방이미지">
+</body>
+</html>

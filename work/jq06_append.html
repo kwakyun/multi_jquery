@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .headLine{
+            background-color: aqua;
+            color: brown;
+        }
+        .content{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        console.log("hello");
+
+        $(function(){
+            console.log("ready....");
+            
+            //append : 대상의 하위노드(자식노드)에 추가- 기존하위가 있으면 뒤에 추가됨.
+            $("#div01").append("<strong>jquery2</strong>");
+            $("#div01").append("<strong>jquery3</strong>");
+
+            //append : 대상의 하위노드(자식노드)에 추가- 기존하위가 있으면 앞에 추가됨.
+            $("#div01").prepend("<strong>jquery4</strong>");
+            $("#div01").prepend("<strong>jquery5</strong>");
+
+            //before : 대상의 앞에 추가
+            $("#div01").before('<img src="images/0001.png">');
+
+            //after : 대상의 뒤에 추가
+            $("#div01").after('<img src="images/0002.png">');
+
+            //empty : 대상의 하위노드들을 모두제거
+            //$("#div01").empty();
+
+            //remove : 대상을 제거
+            //$("#div01").remove();
+
+        });
+        
+    </script>
+</head>
+<body>
+    <h1>hello1</h1>
+    <div id="div01">
+        <strong>jquery</strong>
+    </div>
+</body>
+</html>

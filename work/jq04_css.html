@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            background-color: aqua;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        console.log("hello");
+
+        $(function(){
+            console.log("ready....");
+            
+            $("h1").css("background-color","red");//배경색 변경
+            $("h1").css("color","blue");//폰트컬러변경
+
+            //연속해서 코딩가능.
+            $("h1").css("background-color","yellow").css("color","green");
+
+            //객체타입으로 여러설정 적용가능(여러개 적용시 편리하다.)
+            $("h1").css({
+                "background-color":"black",
+                "color":"white",
+                "font-size":"30pt"
+            });
+            
+        });
+        
+    </script>
+</head>
+<body>
+    <h1 id="h001">hello1</h1>
+    <h1 id="h002">hello2</h1>
+    <h1 id="h003">hello3</h1>
+</body>
+</html>
